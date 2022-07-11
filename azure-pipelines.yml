@@ -23,3 +23,5 @@ steps:
     yarn install
     yarn build
   displayName: 'yarn install and build'
+
+- task: Docker@2
