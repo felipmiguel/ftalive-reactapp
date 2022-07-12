@@ -25,3 +25,8 @@ steps:
   displayName: 'yarn install and build'
 
 - task: Docker@2
+  inputs:
+    containerRegistry: 'FTALive - Registry'
+    repository: 'reactapp'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
