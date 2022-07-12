@@ -28,7 +28,7 @@ export const App: React.FunctionComponent = () => {
 
   useEffect(() => {
     if (!items) {
-      fetch('https://localhost:49153/weatherforecast')
+      fetch( `${process.env.REACT_APP_SERVER_URL}/weatherforecast`)
         .then(response => response.json())
         .then(data => setItems(data));
     }

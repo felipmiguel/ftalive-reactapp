@@ -1,0 +1,1 @@
+az storage blob upload-batch --account-name ftalivereact -d "\$web" -s build
